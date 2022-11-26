@@ -11,7 +11,6 @@ class AuthController extends Controller
     function login(Request $request)
     {
         $user= User::where('mesu_code', $request->mesu_code)->first();
-        // print_r($data);
             if (!$user || $request->nric != $user->nric) {
                 return response([
                     'status' => false,

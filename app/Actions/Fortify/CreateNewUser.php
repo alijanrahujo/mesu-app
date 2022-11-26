@@ -26,18 +26,11 @@ class CreateNewUser implements CreatesNewUsers
             'password' => ['required', 'string', 'max:255'],
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
-        
-        // Validator::make($input, [
-        //     'name' => ['required', 'string', 'max:255'],
-        //     'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        //     'password' => $this->passwordRules(),
-        //     'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
-        // ])->validate();
 
         return User::create([
             'name' => $input['name'],
             'mesu_code' => $input['email'],
-            'nric' =>$input['password'],
+            'nric' => $input['password'],
         ]);
     }
 }
