@@ -15,19 +15,19 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
+                <x-jet-label for="email" value="{{ __('Mesu Code') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="text" name="email" :value="old('email')" required />
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
+                <x-jet-label for="password" value="{{ __('NRIC') }}" />
                 <x-jet-input id="password" class="block mt-1 w-full" type="text" name="password" required autocomplete="new-password" />
             </div>
 
-            <div class="mt-4">
+            <!-- <div class="mt-4">
                 <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
                 <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="text" name="password_confirmation" required autocomplete="new-password" />
-            </div>
+            </div> -->
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                 <div class="mt-4">
