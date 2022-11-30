@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('mesu_code')->nullable()->after('id');
             $table->string('nric')->nullable()->after('mesu_code');
             $table->string('username')->nullable()->after('nric');
-            
+            $table->integer('status')->default(1)->after('usernane');
         });
     }
 

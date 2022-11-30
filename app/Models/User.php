@@ -29,6 +29,7 @@ class User extends Authenticatable
         'password',
         'mesu_code',
         'nric',
+        'status',
     ];
 
     /**

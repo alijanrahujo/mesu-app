@@ -11,11 +11,12 @@
     </ul>
 
     <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto fs-1">
+    <ul class="navbar-nav ml-auto">
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown pr-5">
             <a class="nav-link" data-toggle="dropdown" href="#">
-                <i class="far fa-bell"></i>
+                <i class="fa fa-bell"></i>
+                <i class="fa fa-bell" aria-hidden="true"></i>
                 <span class="badge badge-danger navbar-badge">3</span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -69,6 +70,12 @@
                 <div class="dropdown-divider"></div>
                 <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
             </div>
+        </li>
+        <li class="nav-link">
+            <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button class="link-item btn btn-info" type="submit">Logout</button>
+            </form>
         </li>
         <!-- Notifications Dropdown Menu -->
     </ul>

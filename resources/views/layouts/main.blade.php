@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Mesu App</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css')}}">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{{ asset('dist/css/bootstrap.min.css')}}">
+    <style>
+        * {
+
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
