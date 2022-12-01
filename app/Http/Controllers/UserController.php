@@ -93,7 +93,6 @@ class UserController extends Controller
 
     public function destroy($id)
     {
-        User::where('id', $id)->delete();
-        return redirect("user")->with("flash_message", "Record Deleted");
+        return "user.deler";
     }
 }

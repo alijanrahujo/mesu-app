@@ -18,8 +18,7 @@
                                     <th>Sr No.</th>
                                     <th>Mesu Name</th>
                                     <th>Mesu Code</th>
-                                    <th>Mesu Status</th>
-                                    <!-- <th colspan="3">Action</th> -->
+                                    <th colspan="3">Action</th>
                                 </tr>
                                 @foreach($user as $item)
                                 <tr>
@@ -27,29 +26,16 @@
                                     <td>{{$item->name}}</td>
                                     <td>{{$item->mesu_code}}</td>
                                     <td>
-                                        <?php
-                                        if ($item->status == '1') {
-                                            echo 'Active';
-                                        } else {
-                                            echo "In Active";
-                                        }
-                                        ?>
-                                    </td>
-                                    <!-- <td>
-                                        <a href="{{ url('/user/' .$item->id )}}" class="btn btn-warning btn-sm">
+                                        <a href="{{ url('/user/' .$item->id )}}" class="btn btn-warning">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
-                                    </td>
-                                    <td>
-                                        <a href="{{ url('/user/' .$item->id. '/edit' )}}" class="btn btn-primary btn-sm">
+                                        <a href="{{ url('/user/' .$item->id. '/edit' )}}" class="btn btn-primary btn-small">
                                             <i class="fas fa-edit"></i>
                                         </a>
+                                        <a href="{{ url('/user/' .$item->id )}}" class="btn btn-danger btn-small">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </a>
                                     </td>
-                                    <td>
-                                        {{ Form::open(array('route' => array('user.destroy',$item->id), 'method' => 'delete')) }}
-                                        <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                                        {{ Form::close() }}
-                                    </td> -->
                                 </tr>
                                 @endforeach
                             </table>

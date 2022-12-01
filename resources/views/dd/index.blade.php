@@ -20,7 +20,7 @@
                                     <th>Question One</th>
                                     <th>Question Two</th>
                                     <th>Created At</th>
-                                    <!-- <th>Action</th> -->
+                                    <th>Action</th>
                                 </tr>
                                 @foreach($dd as $item)
                                 <tr>
@@ -29,22 +29,17 @@
                                     <td>{{$item->question_one}}</td>
                                     <td>{{$item->question_two}}</td>
                                     <td>{{$item->created_at}}</td>
-                                    <!-- <td>
-                                        <a href="{{ route('dd.show',$item->id )}}" class="btn btn-warning">
+                                    <td>
+                                        <a href="{{ url('/dd/' .$item->id )}}" class="btn btn-warning">
                                             <i class="fa fa-eye" aria-hidden="true"></i>
                                         </a>
-                                        <a href="{{ route('dd.edit',$item->id )}}" class="btn btn-primary btn-small">
+                                        <a href="{{ url('/dd/' .$item->id. '/edit' )}}" class="btn btn-primary btn-small">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        {{ Form::open(array('route' => array('dd.destroy',$item->id), 'method' => 'delete')) }}
-                                        <button type="submit" class="btn btn-danger btn-small"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                                        {{ Form::close() }}
-                                         
-                                        <form action="{{ route('dd.destroy',$item->id )}}" method="delete">
-                                            {!! csrf_field() !!}
-                                            <button type="submit" class="btn btn-danger btn-small"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                                        </form> 
-                                     </td> -->
+                                        <a href="{{ url('/dd/' .$item->id )}}" class="btn btn-danger btn-small">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </table>

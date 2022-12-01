@@ -16,6 +16,8 @@ class DecelerationController extends Controller
     {
         $dd = Deceleration::all();
         return view("dd.index")->with('dd', $dd);
+        // return view("dd.index");
+        // Auth::user()->id;
     }
 
     /**
@@ -89,7 +91,6 @@ class DecelerationController extends Controller
      */
     public function destroy($id)
     {
-        Deceleration::where('id', $id)->delete();
-        return redirect("dd")->with("flash_message", "Record Deleted");
+        //
     }
 }
