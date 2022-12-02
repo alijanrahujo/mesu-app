@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Art;
 use Illuminate\Http\Request;
-use App\Models\Deceleration;
 
-class DecelerationController extends Controller
+class ArtController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,9 @@ class DecelerationController extends Controller
      */
     public function index()
     {
-        $dd = Deceleration::all();
-        return view("dd.index")->with('dd', $dd);
+        // return view("art.index");
+        $art = Art::all();
+        return view("art.index")->with('art', $art);
     }
 
     /**
@@ -25,7 +26,7 @@ class DecelerationController extends Controller
      */
     public function create()
     {
-        return view("dd.create");
+        return view("art.create");
     }
 
     /**
@@ -38,58 +39,52 @@ class DecelerationController extends Controller
     {
         // return $request;
         $input = $request->all();
-        Deceleration::create($input);
-        return redirect('dd');
+        Art::create($input);
+        return redirect('art');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Art  $art
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Art $art)
     {
-        $dd = Deceleration::find($id);
-        return view("dd.show")->with("dd", $dd);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Art  $art
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Art $art)
     {
-        $dd = Deceleration::find($id);
-        return view("dd.edit")->with("dd", $dd);
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Art  $art
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Art $art)
     {
-        $dd = Deceleration::find($id);
-        $input = $request->all();
-        $dd->update($input);
-        return redirect("dd")->with("flash_message", "Record Updated");
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Art  $art
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Art $art)
     {
-        Deceleration::where('id', $id)->delete();
-        return redirect("dd")->with("flash_message", "Record Deleted");
+        //
     }
 }
