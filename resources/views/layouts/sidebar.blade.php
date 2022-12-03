@@ -27,14 +27,22 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('dd.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
+                        <i class="nav-icon fas fa-marker"></i>
                         <p>
-                            Therapist
+                            Daily Declaration
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/gallery.html" class="nav-link">
+                    <a href="{{ route('art.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-marker"></i>
+                        <p>
+                            Art Test
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
                         <i class="nav-icon fas fa-cog"></i>
                         <p>
                             Setting

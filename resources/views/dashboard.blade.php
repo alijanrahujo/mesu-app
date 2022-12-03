@@ -8,7 +8,7 @@
                     <div class="card bg-info">
                         <div class="card-body">
                             <h4 class="card-title">No. Of Messus</h4>
-                            <p class="card-text">56</p>
+                            <p class="card-text">{{$mesu['total_mesu']}}</p>
                         </div>
                     </div>
                 </div>
@@ -16,7 +16,7 @@
                     <div class="card bg-primary">
                         <div class="card-body">
                             <h4 class="card-title">No. Of Active Messus</h4>
-                            <p class="card-text">5</p>
+                            <p class="card-text">{{$mesu['active_mesu']}}</p>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                     <div class="card bg-success">
                         <div class="card-body">
                             <h4 class="card-title">Completed Test<small>'s</small></h4>
-                            <p class="card-text">20</p>
+                            <p class="card-text">{{$mesu['therapist']}}</p>
                         </div>
                     </div>
                 </div>

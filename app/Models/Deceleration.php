@@ -14,5 +14,5 @@ class Deceleration extends Model
         'question_one',
         'question_two',
         'status'
-    ];
+    ];  
 }
