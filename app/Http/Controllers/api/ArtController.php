@@ -9,6 +9,16 @@ use Illuminate\Support\Facades\Validator;
 
 class ArtController extends Controller
 {
+    public function index()
+    {
+        $art = Art::all();
+        $responce = [
+            "success" => true,
+            "data" => $art,
+            "message" => "Successfully"
+        ];
+        return response()->json($responce, 200);
+    }
     public function create(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -25,11 +35,9 @@ class ArtController extends Controller
         }
         $input = $request->all();
         $art = Art::create($input);
-        // $success['token'] = $art->createToken("myApp")->plainTextToken;
-        // $success['name'] = $art->name;
         $responce = [
             "success" => true,
-            // "data" => $success,
+            "data" => $art,
             "message" => "Record Added Successfully"
         ];
         return response()->json($responce, 200);
@@ -37,6 +45,11 @@ class ArtController extends Controller
     public function show($id)
     {
         $art = Art::find($id);
-        return view("art.show")->with("art", $art);
+        $responce = [
+            "success" => true,
+            "data" => $art,
+            "message" => "Successfully"
+        ];
+        return response()->json($responce, 200);
     }
 }
