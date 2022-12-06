@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DecelerationController;
 use App\Http\Controllers\ArtController;
-use App\Models\Deceleration;
+use App\Http\Controllers\SheetController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
@@ -22,7 +22,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('sheet_data', [SheetController::class, 'index']);
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
     // Route::get('/dashboard', function () {
