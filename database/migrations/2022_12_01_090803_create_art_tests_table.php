@@ -15,11 +15,8 @@ return new class extends Migration
     {
         Schema::create('art_tests', function (Blueprint $table) {
             $table->id();
-            $table->string("test_name");
-            $table->date("start_date");
-            $table->date("end_date");
             $table->integer("test_status");
-            $table->string("file")->nullable();
+            $table->string("filename")->nullable();
             $table->integer("mesu_id")->nullable();
             $table->timestamps();
         });

@@ -20,11 +20,13 @@ use App\Http\Controllers\api\DecelerationController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post("create_art", [ArtController::class, 'create']);
+    Route::get("get_art", [ArtController::class, 'index']);
+    Route::get("get_art/{id}", [ArtController::class, 'show']);
+    Route::post("create_dd", [DecelerationController::class, 'create']);
+    Route::get("get_dd", [DecelerationController::class, 'index']);
+    Route::get("get_dd/{id}", [DecelerationController::class, 'show']);
+});
 
 Route::post("login", [AuthController::class, 'login']);
-Route::post("create_art", [ArtController::class, 'create']);
-Route::get("get_art", [ArtController::class, 'index']);
-Route::get("get_art/{id}", [ArtController::class, 'show']);
-Route::post("create_dd", [DecelerationController::class, 'create']);
-Route::get("get_dd", [DecelerationController::class, 'index']);
-Route::get("get_dd/{id}", [DecelerationController::class, 'show']);

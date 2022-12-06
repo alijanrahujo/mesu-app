@@ -6,6 +6,7 @@ use App\Models\Art;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class ArtController extends Controller
 {
@@ -22,9 +23,7 @@ class ArtController extends Controller
     public function create(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'test_name' => 'required',
-            'start_date' => 'required',
-            'end_date' => 'required',
+            'filename' => 'required',
         ]);
         if ($validator->fails()) {
             $response = [
@@ -34,6 +33,9 @@ class ArtController extends Controller
             return response()->json($response, 400);
         }
         $input = $request->all();
+        $input['mesu_id'] = Auth::user()->id;
+        $input['filename'] = $request->filename->store('public/uploads/');
+        $input['status'] = 1;
         $art = Art::create($input);
         $responce = [
             "success" => true,

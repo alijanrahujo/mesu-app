@@ -13,6 +13,8 @@ class Deceleration extends Model
         'therapist_code',
         'question_one',
         'question_two',
+        'start_date',
+        'end_date',
         'status'
-    ];  
+    ];
 }

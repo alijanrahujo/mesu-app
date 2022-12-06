@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string("question_one")->nullable();
             $table->string("question_two")->nullable();
             $table->integer("status");
+            $table->string("start_date");
+            $table->string("end_date");
             $table->integer("user_id")->nullable();
 
             $table->timestamps();

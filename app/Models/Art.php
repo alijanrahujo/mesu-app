@@ -10,11 +10,8 @@ class Art extends Model
     use HasFactory;
     protected $table = 'art_tests';
     protected $fillable = [
-        'test_name',
-        'start_date',
-        'end_date',
         'test_status',
-        'file',
+        'filename',
         'mesu_id',
     ];
 }

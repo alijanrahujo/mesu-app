@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "9090fce2-4174-4b64-89e2-76283abcff91",
+		"name": "mesu app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24516394"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/login?mesu_code=112233&nric=12345",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "mesu_code",
+							"value": "112233"
+						},
+						{
+							"key": "nric",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_dd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|uHY6koqBJi06JpQGKAjGeC1uN32fHiduhJEdcFrU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/create_dd?therapist_name=Meer&therapist_code=T005&question_one=Are You .....?&question_two=Are You .....?",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create_dd"
+					],
+					"query": [
+						{
+							"key": "therapist_name",
+							"value": "Meer"
+						},
+						{
+							"key": "therapist_code",
+							"value": "T005"
+						},
+						{
+							"key": "question_one",
+							"value": "Are You .....?"
+						},
+						{
+							"key": "question_two",
+							"value": "Are You .....?"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_dd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|uHY6koqBJi06JpQGKAjGeC1uN32fHiduhJEdcFrU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/get_dd",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_single_dd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|uHY6koqBJi06JpQGKAjGeC1uN32fHiduhJEdcFrU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/get_dd/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_dd",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_art",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|uHY6koqBJi06JpQGKAjGeC1uN32fHiduhJEdcFrU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filename",
+							"type": "file",
+							"src": "/C:/Users/DELL/Pictures/Capture2.JPG"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/create_art",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create_art"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_art",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|uHY6koqBJi06JpQGKAjGeC1uN32fHiduhJEdcFrU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/get_art",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_art"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_single_art",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|uHY6koqBJi06JpQGKAjGeC1uN32fHiduhJEdcFrU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/get_art/12",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"get_art",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

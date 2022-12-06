@@ -37,6 +37,8 @@ class DecelerationController extends Controller
             'therapist_code' => 'required',
             'question_one' => 'required',
             'question_two' => 'required',
+            'start_date' => 'required',
+            'end_date' => 'required',
         ]);
         if ($validator->fails()) {
             $response = [
