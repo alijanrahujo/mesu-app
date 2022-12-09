@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mesu-app",
+  "private_key_id": "358c230549407008a519d2d233312bffe15a20ae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDi53TGM4B+sxzp\nAE3c5esWCm143RDYIn0sjAv4AaoDCqaJsvh4/d5oJZ9+F32Y8LdGRa0qif0AG/S1\nO93ZCasoddiC3BSNd6bEn6yf+CMU/w+W4whMNwEaZv3fj7edV+8An8aq6SbtZkWL\nDr8IvHS//K8GD6OZblVMCf1yO9BH05gHlh1pjbDguX1d08XQDGpjdccMdoucBZLg\nHsqCuPpQi2aZFYsfT/dG1mtCstfa/hawWiRUkNzAesgSRgKMARanEB6FHZFWKywB\nsGx5EsLSZ3etVrgnaZXl15mXSf1KNFlJocXBzfkzNmXrqph2+Oc95saDV2pzdFPv\nvsBJWfHjAgMBAAECggEAV83KReJrIFxOXSnFd6wvDv3lA+bD3GdoOeNNxGBcekXW\nUSXE+gj/Vhzs/Z24eAT6XwKacoIoObEXvkQW4qRXq9YCfQ0OFPpOufqyEcszRC45\nSaG8NcX5Ms7VAfx6yLPc5Ehv1/ZWHnq7gYaozQgkQ6DT18wYekiUUFLzVQ+pVwlj\nW3yCSoAO6EixC3HLBJfjZf74eb66wNre1bm2QD/p57TY+X7ngm+Cha+qiN3VW616\nat0gcHpccV1Sx8fE5BzlG1wDmv+3JDGwFKLmpEzeeEgmkIjQ1TiNPQXuM03ryL6j\nfZcBHNR3zdyJLMnmELZN0J+cYAM63l4/LlAOlLy0mQKBgQDzBJVzxZNnRLumYMW8\nEE66W9t9Tshr7a8Nb7k+qX8GU7nBWBhI0BtytAU1l9ejontwcmWYQ0zAmyZtfxoj\nJ+ibnkA7fDqEdhn7vqfn3/hPYzZA+xsc4ZicnogicYTkhiqaO/TswSWJJ9w9dYsm\n6NAOQ4Lv1JcZZRdk0XcB95nyOwKBgQDvBoG3nb7yxLtRtdM32feeo13BzVB7kyrk\nI5kDVO1QhabK9UrVsJdOuQXUaDv7begSgac16Q1EhXN7zLgiE3ftJPltAqpeXRAx\nArd8sncqZP7iZAHXqtj/zclslh1fKFzH4PJgSOxYvjjhoWl+KDeXGPOfsSHpLaT/\nbNzwt8gceQKBgBcJ1zVLhMbkgDmssPI8RYprTOqbPmrk9JR8g/5JyU4LP+/xbxPw\nDroYEOpcw8eyjqtBXRpLPwp/auw0gYDVtrqSDRrWkyGdpKb2EyrrU7oK+Mi+RXq+\ndF5ctSE2y9dyVLWce4K6aNmQ2tNEwnVk2tyPT+l2qQByUf5v0S1xkLmjAoGAOYUM\nVD5uxAcZuMkToh4e25sepdOdqY85xBrY6JdYYIc5IyAyOQg88SHPSFUpEhFZxpJS\nxcNmgPXIW6NhMDoVIwlByLzaeMjWa6TmuOhNivMw7xP36YlgnPZNoYbiXJLe+O6m\nBQunbJeiIpHwS/6rmf3UKrq6mV11lk4BQSBI1KkCgYBZTeCqjKRw4nuC9MX9dcPI\nP9cE5CQ4Z1ucECXAbR9ejV08lXVo7iR7M1Nkkeou1FjnF4d+PyxGlmao5NbkMEBu\nLtdcGCWEpZgR6xMETOeKRFsfBkgh8rEpCnPBoHJy4Be/j7FzMnnDlH70qGTQtcd0\nVCgQ79j1clb0+CfYWTqkoQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mesu-app@mesu-app.iam.gserviceaccount.com",
+  "client_id": "117806661807176229086",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mesu-app%40mesu-app.iam.gserviceaccount.com"
+}

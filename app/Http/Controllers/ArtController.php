@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Art;
 use Illuminate\Http\Request;
+use Sheets;
 
 class ArtController extends Controller
 {
@@ -14,6 +15,8 @@ class ArtController extends Controller
      */
     public function index()
     {
+        return $rows = Sheets::sheet('Temperature Log')->get();
+
         // return view("art.index");
         $art = Art::all();
         return view("art.index")->with('art', $art);

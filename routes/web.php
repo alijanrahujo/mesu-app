@@ -23,6 +23,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('sheet_data', [SheetController::class, 'index']);
+Route::get('insert_data', [SheetController::class, 'create']);
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index']);
     // Route::get('/dashboard', function () {
